@@ -1,0 +1,25 @@
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  flex-direction: $direction;
+  align-items: $align;
+}
+
+@mixin h1 {
+  font-size: 7.594rem;
+}
+@mixin h2 {
+  font-size: 5.063rem;
+}
+@mixin h3 {
+  font-size: 3.375rem;
+}
+@mixin h4 {
+  font-size: 2.25rem;
+}
+@mixin h5 {
+  font-size: 1.5rem;
+}
+@mixin small {
+  font-size: 0.667rem;
+}

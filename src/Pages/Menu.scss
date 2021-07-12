@@ -1,0 +1,21 @@
+@import "../Sass/mixin.scss";
+@import "../Sass/variables.scss";
+
+.menu {
+  position: relative;
+}
+
+.menu--container {
+  @include flex(center, center, column);
+  width: 100vw;
+  margin-top: 4rem;
+  .menu--cards {
+    width: 80rem;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+  }
+}

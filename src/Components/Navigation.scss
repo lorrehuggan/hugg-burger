@@ -1,0 +1,49 @@
+@import "../Sass/mixin.scss";
+@import "../Sass/variables.scss";
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.nav--container {
+  @include flex(space-between, center, row);
+  height: 6rem;
+  padding: 0rem 1.25rem;
+  width: 100%;
+  background-color: $primary-color;
+
+  .nav--logo {
+    @include flex(space-between, center, row);
+    text-transform: uppercase;
+    @include h4;
+    letter-spacing: -0.25rem;
+    color: $primary-dark-color;
+    font-weight: bold;
+    h4 {
+      margin-top: 0.5rem;
+      margin-left: 0.5rem;
+    }
+  }
+
+  .nav--links__container {
+    width: 25%;
+
+    ul {
+      @include flex(right, center, row);
+
+      a {
+        text-decoration: none;
+        padding: 1.25rem;
+        color: $primary-dark-color;
+        list-style: none;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+  }
+}

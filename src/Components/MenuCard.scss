@@ -1,0 +1,35 @@
+@import "../Sass/mixin.scss";
+@import "../Sass/variables.scss";
+
+.menu--card {
+  width: calc(80rem / 3);
+  border-radius: 24px;
+  cursor: pointer;
+  @include flex(center, center, column);
+  padding-bottom: 2rem;
+  transition: box-shadow 0.2s ease;
+  &:hover {
+    box-shadow: 5px 5px 30px rgba(54, 54, 54, 0.089);
+  }
+
+  img {
+    width: calc(80rem / 3.5);
+    object-fit: cover;
+  }
+  .menu--card__details {
+    text-align: center;
+    color: $primary-dark-color;
+    small {
+      font-size: 1rem;
+      color: #ee9722;
+    }
+    h4 {
+      @include h4;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+    p {
+      @include h5;
+    }
+  }
+}

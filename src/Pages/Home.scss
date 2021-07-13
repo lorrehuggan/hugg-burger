@@ -48,23 +48,42 @@
         text-align: center;
       }
     }
+    .home--sticker__container {
+      width: 100%;
+      @include flex(center, center, row);
 
-    .home--sticker {
-      background-color: $primary-color;
-      height: 6rem;
-      width: 18rem;
-      z-index: 99;
-      border-radius: 8rem;
-      position: absolute;
-      bottom: 4rem;
-      @include flex(space-around, center, row);
+      .home--sticker {
+        padding: 2rem;
 
-      .sticker {
-        height: 6rem;
-        width: calc(18rem * 3);
-        background-color: red;
-        border-radius: 50%;
+        height: 6.25rem;
+        width: 18rem;
+        z-index: 99;
+        border-radius: 8rem;
+        position: absolute;
+        bottom: 4rem;
+        @include flex(space-around, center, row);
+
+        .sticker {
+          height: 6rem;
+          width: calc(18rem * 3);
+          background-color: rgba(255, 255, 255, 0.102);
+          border-radius: 50%;
+          img {
+            width: 128px;
+          }
+        }
       }
     }
+  }
+}
+
+.home--bottom__msg {
+  @include flex(space-around, center, column);
+  padding: 2rem 0rem;
+  p {
+    @include h5;
+    width: 27%;
+    text-align: center;
+    color: $primary-dark-color;
   }
 }

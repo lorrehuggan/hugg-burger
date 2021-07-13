@@ -6,7 +6,7 @@ footer {
   height: 20rem;
   background-color: black;
   .footer--signup {
-    background-color: $primary-dark-color;
+    background-color: white;
     @include flex(center, center, column);
     height: 65%;
     .footer--signup__container {
@@ -22,7 +22,7 @@ footer {
         @include h5;
         font-weight: 300;
         margin-bottom: 1rem;
-        color: white;
+        color: $primary-dark-color;
       }
       form {
         @include flex(left, center, row);
@@ -35,6 +35,7 @@ footer {
           font-size: 1.25rem;
           color: $primary-dark-color;
           margin-right: 1rem;
+          border: 2px solid $primary-dark-color;
         }
         button {
           border-radius: 36px;
@@ -62,6 +63,11 @@ footer {
         .icon {
           color: white;
           font-size: 2rem;
+          cursor: pointer;
+          transition: transform 0.2s ease;
+          &:hover {
+            transform: scale(1.05);
+          }
         }
         small {
           color: white;

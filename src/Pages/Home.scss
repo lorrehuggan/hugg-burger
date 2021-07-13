@@ -12,16 +12,28 @@
 
     .home--img {
       @include flex(center, center, row);
+      z-index: 2;
       img {
-        width: 600px;
+        width: 500px;
         object-fit: contain;
+        cursor: pointer;
+        transition: transform 0.5s ease;
+        &:hover {
+          transform: scale(1.02);
+        }
       }
     }
 
-    .home--header {
-      z-index: 4;
+    .home--img__img-bg {
+      width: 100%;
+      height: 40%;
+      background-color: white;
       position: absolute;
-      top: 15vh;
+      bottom: 0;
+      left: 0;
+    }
+
+    .home--header {
       padding: 1.25rem;
       left: 0;
       width: 100%;

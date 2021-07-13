@@ -21,6 +21,7 @@ function Home() {
             <img src={BaconDouble} alt="bacondouble-burger" />
             <img src={TexasStacker} alt="texas-burger" />
           </div>
+          <div className="home--img__img-bg"></div>
         </div>
       </div>
       <Footer />

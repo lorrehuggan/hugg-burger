@@ -3,6 +3,77 @@
 
 footer {
   width: 100%;
-  height: 30rem;
-  background-color: red;
+  height: 20rem;
+  background-color: black;
+  .footer--signup {
+    background-color: $primary-dark-color;
+    @include flex(center, center, column);
+    height: 65%;
+    .footer--signup__container {
+      width: 30rem;
+      height: 100%;
+
+      h3 {
+        @include h3;
+        margin-top: 1.5rem;
+        color: $primary-color;
+      }
+      p {
+        @include h5;
+        font-weight: 300;
+        margin-bottom: 1rem;
+        color: white;
+      }
+      form {
+        @include flex(left, center, row);
+        input {
+          border: none;
+          border-radius: 36px;
+          height: 2.5rem;
+          width: 18.5rem;
+          padding-left: 1rem;
+          font-size: 1.25rem;
+          color: $primary-dark-color;
+          margin-right: 1rem;
+        }
+        button {
+          border-radius: 36px;
+          border: none;
+          height: 2.5rem;
+          width: calc(18.5rem / 1.682);
+          background-color: $primary-color;
+          font-size: 1.25rem;
+          font-weight: 900;
+          color: $primary-dark-color;
+        }
+      }
+    }
+  }
+
+  .footer--bottom {
+    padding: 2rem;
+    @include flex(space-between, center, row);
+    height: 35%;
+    background-color: black;
+    .footer-info {
+      .footer--info__top {
+        @include flex(space-between, center, row);
+        width: 35rem;
+        .icon {
+          color: white;
+          font-size: 2rem;
+        }
+        small {
+          color: white;
+        }
+      }
+    }
+
+    .footer--vegan {
+      margin-top: 0.5rem;
+      img {
+        height: 100px;
+      }
+    }
+  }
 }

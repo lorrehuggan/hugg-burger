@@ -9,8 +9,9 @@
   @include flex(center, center, column);
   width: 100vw;
   margin-top: 4rem;
+
   .menu--cards {
-    width: 80rem;
+    width: 82rem;
     display: grid;
     grid-auto-columns: 1fr;
     grid-template-columns: 1fr 1fr 1fr;

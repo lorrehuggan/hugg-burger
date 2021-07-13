@@ -6,6 +6,7 @@ nav {
   top: 0;
   left: 0;
   z-index: 999;
+  width: 100%;
 }
 
 .nav--container {
@@ -15,6 +16,11 @@ nav {
   width: 100%;
   background-color: $primary-color;
 
+  a {
+    text-decoration: none;
+    color: $primary-dark-color;
+  }
+
   .nav--logo {
     @include flex(space-between, center, row);
     text-transform: uppercase;
@@ -22,9 +28,17 @@ nav {
     letter-spacing: -0.25rem;
     color: $primary-dark-color;
     font-weight: bold;
+    transition: color 0.2s ease;
+    &:hover {
+      color: white;
+    }
     h4 {
       margin-top: 0.5rem;
       margin-left: 0.5rem;
+      transition: color 0.2s ease;
+      &:hover {
+        color: white;
+      }
     }
   }
 

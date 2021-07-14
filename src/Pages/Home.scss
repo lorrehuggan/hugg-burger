@@ -1,5 +1,5 @@
-@import "../Sass/mixin.scss";
-@import "../Sass/variables.scss";
+@import '../Sass/mixin.scss';
+@import '../Sass/variables.scss';
 
 .home {
   background-color: $primary-color;
@@ -54,11 +54,9 @@
 
       .home--sticker {
         padding: 2rem;
-
         height: 6.25rem;
-        width: 18rem;
-        z-index: 99;
-        border-radius: 8rem;
+        width: 20rem;
+        z-index: 3;
         position: absolute;
         bottom: 4rem;
         @include flex(space-around, center, row);

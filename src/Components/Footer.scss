@@ -1,9 +1,9 @@
-@import "../Sass/mixin.scss";
-@import "../Sass/variables.scss";
+@import '../Sass/mixin.scss';
+@import '../Sass/variables.scss';
 
 footer {
   width: 100%;
-  height: 20rem;
+  height: 30rem;
   background-color: black;
   .footer--signup {
     background-color: white;
@@ -12,6 +12,7 @@ footer {
     .footer--signup__container {
       width: 30rem;
       height: 100%;
+      padding: 1rem;
 
       h3 {
         @include h3;
@@ -38,6 +39,7 @@ footer {
           border: 2px solid $primary-dark-color;
         }
         button {
+          cursor: pointer;
           border-radius: 36px;
           border: none;
           height: 2.5rem;
@@ -46,6 +48,10 @@ footer {
           font-size: 1.25rem;
           font-weight: 900;
           color: $primary-dark-color;
+          transition: background-color 0.2s ease;
+          &:hover {
+            background-color: $primary-color-alt;
+          }
         }
       }
     }

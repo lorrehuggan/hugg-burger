@@ -1,5 +1,5 @@
-@import "../Sass/mixin.scss";
-@import "../Sass/variables.scss";
+@import '../Sass/mixin.scss';
+@import '../Sass/variables.scss';
 
 nav {
   position: sticky;
@@ -12,7 +12,7 @@ nav {
 .nav--container {
   @include flex(space-between, center, row);
   height: 6rem;
-  padding: 0rem 1.25rem;
+  padding: 0rem 2.25rem;
   width: 100%;
   background-color: $primary-color;
 
@@ -21,11 +21,16 @@ nav {
     color: $primary-dark-color;
   }
 
+  span {
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+  }
+
   .nav--logo {
     @include flex(space-between, center, row);
     text-transform: uppercase;
-    @include h4;
-    letter-spacing: -0.25rem;
+    font-size: 2.5rem;
+    letter-spacing: -0.2rem;
     color: $primary-dark-color;
     font-weight: bold;
     transition: color 0.2s ease;
@@ -36,6 +41,8 @@ nav {
       margin-top: 0.5rem;
       margin-left: 0.5rem;
       transition: color 0.2s ease;
+      font-weight: 900;
+
       &:hover {
         color: black;
       }

@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./Navigation.scss";
-import { FaHamburger } from "react-icons/fa";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Navigation.scss';
+import { FaHamburger } from 'react-icons/fa';
 
 function Navigation() {
   return (
@@ -10,7 +10,9 @@ function Navigation() {
         <div className="nav--logo">
           <FaHamburger />
           <Link to="/">
-            <h4>HuggBurger</h4>
+            <h4>
+              Hugg<span>Burger</span>
+            </h4>
           </Link>
         </div>
         <div className="nav--links__container">

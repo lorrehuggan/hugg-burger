@@ -1,5 +1,5 @@
-@import "../Sass/mixin.scss";
-@import "../Sass/variables.scss";
+@import '../Sass/mixin.scss';
+@import '../Sass/variables.scss';
 
 .menu--card {
   width: calc(80rem / 3);
@@ -21,7 +21,7 @@
     color: $primary-dark-color;
     small {
       font-size: 1rem;
-      color: #ee9722;
+      color: $primary-color-alt;
     }
     h4 {
       @include h4;

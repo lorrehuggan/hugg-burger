@@ -48,30 +48,6 @@
         text-align: center;
       }
     }
-    .home--sticker__container {
-      width: 100%;
-      @include flex(center, center, row);
-
-      .home--sticker {
-        padding: 2rem;
-        height: 6.25rem;
-        width: 20rem;
-        z-index: 3;
-        position: absolute;
-        bottom: 4rem;
-        @include flex(space-around, center, row);
-
-        .sticker {
-          height: 6rem;
-          width: calc(18rem * 3);
-          background-color: rgba(255, 255, 255, 0.102);
-          border-radius: 50%;
-          img {
-            width: 128px;
-          }
-        }
-      }
-    }
   }
 }
 

@@ -5,6 +5,7 @@ footer {
   width: 100%;
   height: 30rem;
   background-color: black;
+  
   .footer--signup {
     background-color: white;
     @include flex(center, center, column);

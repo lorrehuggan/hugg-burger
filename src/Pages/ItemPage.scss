@@ -1,0 +1,46 @@
+@import '../Sass/mixin.scss';
+@import '../Sass/variables.scss';
+
+.item--page {
+  @include flex(center, center, column);
+  .item--page__container {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 0.75fr;
+    width: 75rem;
+    height: 40rem;
+
+    .menu--item__container {
+      @include flex(center, center, column);
+      img {
+        height: 40rem;
+      }
+    }
+    .ingredients--details__container {
+      @include flex(center, center, column);
+      background-color: white;
+      padding: 3rem;
+
+      .ingredients--details {
+        @include flex(center, center, column);
+        small {
+          font-size: 1.25rem;
+          color: $primary-color-alt;
+        }
+        h3 {
+          @include h3;
+          text-transform: uppercase;
+          font-weight: 900;
+          color: $primary-dark-color;
+        }
+        p {
+          font-size: 1rem;
+          text-align: center;
+          margin-bottom: 1rem;
+          color: $primary-dark-color;
+          line-height: calc(1rem * 1.3);
+        }
+      }
+    }
+  }
+}

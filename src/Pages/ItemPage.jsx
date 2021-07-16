@@ -1,8 +1,5 @@
 import React, { Fragment } from 'react';
-import Navigation from '../Components/Navigation';
-import Footer from '../Components/Footer';
 import './ItemPage.scss';
-import BigReady from '../img/Big-Ready.png';
 import DeliveryStickers from '../Components/DeliveryStickers';
 import Gluten from '../img/gluten.svg';
 import Nuts from '../img/nuts.svg';
@@ -12,25 +9,20 @@ import Soya from '../img/soya.svg';
 import Peanuts from '../img/peanuts.svg';
 import Celery from '../img/celery.svg';
 
-function ItemPage() {
+function ItemPage({ name, small, price, info, img }) {
   return (
     <Fragment>
-      <Navigation />
       <div className="item--page">
         <div className="item--details__container">
           <div className="details--img">
-            <img src={BigReady} alt="big-ready-burger" />
+            <img src={img} alt="big-ready-burger" />
           </div>
           <div className="details--container">
             <div className="details">
-              <small>Premium Burgers</small>
-              <h3>Big Hugg</h3>
-              <h4>£3.59</h4>
-              <p>
-                Two grilled patties with cheese, lettuce, pickles and Ready
-                sauce. All housed in a soft and freshly toasted double cut
-                seeded bun.
-              </p>
+              <small>{small}</small>
+              <h3>{name}</h3>
+              <h4>{price}</h4>
+              <p>{info}</p>
               <DeliveryStickers />
             </div>
           </div>
@@ -57,7 +49,6 @@ function ItemPage() {
           </p>
         </div>
       </div>
-      <Footer />
     </Fragment>
   );
 }

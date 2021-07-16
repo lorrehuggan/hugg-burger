@@ -1,0 +1,21 @@
+@import '../Sass/mixin.scss';
+@import '../Sass/variables.scss';
+
+.item--container {
+  @include flex(center, center, column);
+  position: relative;
+  .item--goback {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    @include flex(center, left, row);
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: $primary-dark-color;
+    font-weight: 900;
+    transition: color 0.2s ease;
+    &:hover {
+      color: #af0000;
+    }
+  }
+}

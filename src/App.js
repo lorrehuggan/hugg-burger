@@ -7,6 +7,7 @@ import Location from './Pages/Locations';
 import Menu from './Pages/Menu';
 import Home from './Pages/Home';
 import ItemPage from './Pages/ItemPage';
+import Item from './Pages/Item';
 
 function App() {
   return (
@@ -14,11 +15,11 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route path="/menu/:name" component={Item} />
           <Route path="/menu" component={Menu} />
           <Route path="/delivery" component={Delivery} />
           <Route path="/about" component={About} />
           <Route path="/locations" component={Location} />
-          <Route path="/item" component={ItemPage} />
         </Switch>
       </Router>
     </div>

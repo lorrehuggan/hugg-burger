@@ -36,6 +36,7 @@
           text-transform: uppercase;
           font-weight: 900;
           color: $primary-dark-color;
+          text-align: center;
         }
         h4 {
           @include h4;
@@ -74,6 +75,7 @@
     p {
       font-size: 1rem;
       line-height: calc(1rem * 1.5);
+      margin-bottom: 4rem;
     }
   }
 }

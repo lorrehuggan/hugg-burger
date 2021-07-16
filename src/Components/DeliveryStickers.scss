@@ -10,8 +10,7 @@
     height: 6.25rem;
     width: 20rem;
     z-index: 3;
-    position: absolute;
-    bottom: 4rem;
+
     @include flex(space-around, center, row);
 
     .sticker {

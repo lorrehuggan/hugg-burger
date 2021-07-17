@@ -6,7 +6,7 @@ import Delivery from './Pages/Delivery';
 import Location from './Pages/Locations';
 import Menu from './Pages/Menu';
 import Home from './Pages/Home';
-import ItemPage from './Pages/ItemPage';
+
 import Item from './Pages/Item';
 
 function App() {

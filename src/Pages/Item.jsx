@@ -1,4 +1,4 @@
-import React, { useEffect, useState, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '../Components/Navigation';
 import Footer from '../Components/Footer';
@@ -16,7 +16,10 @@ function Item({ match }) {
       <div className="item--container">
         <Link to="/menu">
           <div className="item--goback">
-            <IoIosArrowBack />
+            <div className="goback--icon">
+              <IoIosArrowBack />
+            </div>
+
             <p>Go Back</p>
           </div>
         </Link>

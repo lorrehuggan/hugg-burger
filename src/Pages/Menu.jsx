@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { useHistory, useRouteMatch } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import Navigation from '../Components/Navigation';
 import './Menu.scss';
 import MenuCard from '../Components/MenuCard';
@@ -9,7 +9,7 @@ import { menuData } from '../Data/data';
 
 function Menu() {
   let history = useHistory();
-  let { url } = useRouteMatch();
+
   return (
     <Fragment>
       <Navigation />
@@ -18,9 +18,11 @@ function Menu() {
           <div className="menu--cards">
             {menuData.map((card) => {
               return (
-                <div onClick={() => history.push(`/menu/${card.id}`)}>
+                <div
+                  key={card.id}
+                  onClick={() => history.push(`/menu/${card.id}`)}
+                >
                   <MenuCard
-                    key={card.id}
                     img={card.img}
                     type={card.class}
                     name={card.name}

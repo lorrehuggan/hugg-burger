@@ -2,7 +2,6 @@ import React from 'react';
 import Navigation from '../Components/Navigation';
 import Footer from '../Components/Footer';
 import './Home.scss';
-
 import BigReady from '../img/Big-Ready.png';
 import BaconDouble from '../img/Bacon-Double.png';
 import TexasStacker from '../img/Texas-Stacker.png';

@@ -17,5 +17,8 @@
     &:hover {
       color: #af0000;
     }
+    .goback--icon {
+      @include flex(center, center, column);
+    }
   }
 }

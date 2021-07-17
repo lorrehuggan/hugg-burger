@@ -19,14 +19,13 @@ function Item({ match }) {
             <div className="goback--icon">
               <IoIosArrowBack />
             </div>
-
             <p>Go Back</p>
           </div>
         </Link>
 
         <ItemPage
           name={menuData[id].name}
-          small={menuData[id].class}
+          small={menuData[id].status}
           price={menuData[id].price}
           info={menuData[id].info}
           img={menuData[id].img}

@@ -24,7 +24,7 @@ function Menu() {
                 >
                   <MenuCard
                     img={card.img}
-                    type={card.class}
+                    type={card.status}
                     name={card.name}
                     price={card.price}
                   />

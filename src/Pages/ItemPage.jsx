@@ -8,6 +8,7 @@ import Sesame from '../img/sesame.svg';
 import Soya from '../img/soya.svg';
 import Peanuts from '../img/peanuts.svg';
 import Celery from '../img/celery.svg';
+import Navigation from '../Components/Navigation';
 
 function ItemPage({ name, small, price, info, img }) {
   return (

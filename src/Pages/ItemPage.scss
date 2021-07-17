@@ -13,7 +13,7 @@
     .details--img {
       @include flex(center, left, column);
       img {
-        object-fit: cover;
+        object-fit: contain;
         height: 45rem;
       }
     }

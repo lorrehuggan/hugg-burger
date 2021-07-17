@@ -1,7 +1,7 @@
 export const menuData = [
   {
     id: '0',
-    class: 'Premium Burgers',
+    status: 'Premium Burgers',
     name: 'Big Hugg',
     price: '£3.99',
     img: 'https://uploads-ssl.webflow.com/5f8865886682eb261ff3e18b/60b1fb939d82572c41f3bbdd_Big-Ready.png',
@@ -9,15 +9,15 @@ export const menuData = [
   },
   {
     id: '1',
-    class: 'Value Menu',
+    status: 'Value Menu',
     name: 'Hugg Burger',
     price: '£1.59',
     img: 'https://uploads-ssl.webflow.com/5f8865886682eb261ff3e18b/60910e4b73f92b3ad8bb7ee4_Ready-Burger.png',
-    info: 'Grilled patty with diced white onion, pickles, American mustard and Heinz tomato ketchup, all on a freshly toasted soft bun. A timeless classic. ',
+    info: 'Grilled patty with diced white onion, pickles, American mustard and Heinz tomato ketchup, all on a freshly toasted soft bun. A timeless statusic. ',
   },
   {
     id: '2',
-    class: 'Premium Burger',
+    status: 'Premium Burger',
     name: 'Chicken Challenger',
     price: '£4.99',
     img: 'https://uploads-ssl.webflow.com/5f8865886682eb261ff3e18b/609112fbb0d5a6344debe798_Chicken-Challenger.png',
@@ -25,7 +25,7 @@ export const menuData = [
   },
   {
     id: '3',
-    class: 'Value Menu',
+    status: 'Value Menu',
     name: 'Cheeseburger',
     price: '£1.99',
     img: 'https://uploads-ssl.webflow.com/5f8865886682eb261ff3e18b/60910e8ad3595f1331530c3c_Cheeseburger.png',
@@ -33,7 +33,7 @@ export const menuData = [
   },
   {
     id: '4',
-    class: 'Premium Burger',
+    status: 'Premium Burger',
     name: 'Big Hugg Meal',
     price: '£5.99',
     img: 'https://uploads-ssl.webflow.com/5f8865886682eb261ff3e18b/60b1fba6b7b11d01e414ae95_Big-Ready-Meal.png',
@@ -41,7 +41,7 @@ export const menuData = [
   },
   {
     id: '5',
-    class: 'Premium Burger',
+    status: 'Premium Burger',
     name: 'Texas Stacker Meal',
     price: '£5.99',
     img: 'https://uploads-ssl.webflow.com/5f8865886682eb261ff3e18b/60b5f6698d956471b9ca5d04_Texas-Stacker-Meal.png',
@@ -49,7 +49,7 @@ export const menuData = [
   },
   {
     id: '6',
-    class: 'Premium Burger',
+    status: 'Premium Burger',
     name: 'Bacon Double Cheeseburger',
     price: '£4.99',
     img: 'https://uploads-ssl.webflow.com/5f8865886682eb261ff3e18b/60b5f62611526d26ca4bb5e8_Bacon-Double-Cheeseburger.png',
@@ -57,15 +57,15 @@ export const menuData = [
   },
   {
     id: '7',
-    class: 'Premium Burger',
+    status: 'Premium Burger',
     name: 'Double Cheeseburger',
     price: '£2.99',
     img: 'https://uploads-ssl.webflow.com/5f8865886682eb261ff3e18b/609111a011aa5a1437198cc9_Double-Cheeseburger.png',
-    info: 'Double grilled patties with cheese, diced white onion, pickles, American mustard and Heinz tomato ketchup, all on a freshly toasted soft bun. A bigger take on a classic.',
+    info: 'Double grilled patties with cheese, diced white onion, pickles, American mustard and Heinz tomato ketchup, all on a freshly toasted soft bun. A bigger take on a statusic.',
   },
   {
     id: '8',
-    class: 'Sides',
+    status: 'Sides',
     name: '3x Strips',
     price: '£2.59',
     img: 'https://uploads-ssl.webflow.com/5f8865886682eb261ff3e18b/60ca10d3a2ab220c4f9f1e7d_Tenders-x3.png',

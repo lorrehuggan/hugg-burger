@@ -6,16 +6,38 @@ import BigReady from '../img/Big-Ready.png';
 import BaconDouble from '../img/Bacon-Double.png';
 import TexasStacker from '../img/Texas-Stacker.png';
 import DeliveryStickers from '../Components/DeliveryStickers';
+import { motion } from 'framer-motion';
 
 function Home() {
+  const burgerVariant = {
+    burger: {
+      opacity: 0,
+    },
+  };
   return (
     <React.Fragment>
       <Navigation />
       <div className="home">
         <div className="home--container">
-          <div className="home--header">
+          <motion.div
+            className="home--header"
+            animate={{
+              x: 0,
+              opacity: [1, 0, 1, 0, 1],
+            }}
+            initial={{
+              x: '-300',
+              opacity: 0,
+            }}
+            transition={{
+              type: 'spring',
+              stiffness: 80,
+              damping: 5,
+              duration: 3,
+            }}
+          >
             <h1>Ready for a better burger?</h1>
-          </div>
+          </motion.div>
           <div className="home--img">
             <img src={BigReady} alt="bigready-burger" />
             <img src={BaconDouble} alt="bacondouble-burger" />

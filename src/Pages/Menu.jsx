@@ -6,9 +6,19 @@ import MenuCard from '../Components/MenuCard';
 
 import Footer from '../Components/Footer';
 import { menuData } from '../Data/data';
+import { motion } from 'framer-motion';
 
 function Menu() {
   let history = useHistory();
+  const itemAnimation = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 1.162,
+      },
+    },
+  };
 
   return (
     <Fragment>
@@ -18,7 +28,10 @@ function Menu() {
           <div className="menu--cards">
             {menuData.map((card) => {
               return (
-                <div
+                <motion.div
+                  variants={itemAnimation}
+                  animate="visible"
+                  initial="hidden"
                   key={card.id}
                   onClick={() => history.push(`/menu/${card.id}`)}
                 >
@@ -28,7 +41,7 @@ function Menu() {
                     name={card.name}
                     price={card.price}
                   />
-                </div>
+                </motion.div>
               );
             })}
           </div>

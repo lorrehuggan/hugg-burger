@@ -2,11 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navigation.scss';
 import { FaHamburger } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 function Navigation() {
   return (
     <nav>
-      <div className="nav--container">
+      <motion.div
+        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: '-100' }}
+        transition={{ duration: 1, ease: 'anticipate' }}
+        className="nav--container"
+      >
         <div className="nav--logo">
           <FaHamburger />
           <Link to="/">
@@ -31,7 +37,7 @@ function Navigation() {
             </Link>
           </ul>
         </div>
-      </div>
+      </motion.div>
     </nav>
   );
 }

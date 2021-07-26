@@ -3,21 +3,41 @@ import Deliveroo from '../img/Deliveroo.png';
 import JustEat from '../img/Just-Eat.png';
 import UberEats from '../img/Uber-Eats.png';
 import './DeliveryStickers.scss';
+import { motion } from 'framer-motion';
 
 function DeliveryStickers() {
+  const stickerAnimation = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 1,
+        staggerChildren: 0.162,
+      },
+    },
+  };
+  const sticker = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  };
   return (
     <div className="home--sticker__container">
-      <div className="home--sticker">
-        <div className="sticker">
+      <motion.div
+        variants={stickerAnimation}
+        animate="visible"
+        initial="hidden"
+        className="home--sticker"
+      >
+        <motion.div variants={sticker} className="sticker">
           <img src={Deliveroo} alt="deliveroo" />
-        </div>
-        <div className="sticker">
+        </motion.div>
+        <motion.div variants={sticker} className="sticker">
           <img src={JustEat} alt="justeat" />
-        </div>
-        <div className="sticker">
+        </motion.div>
+        <motion.div variants={sticker} className="sticker">
           <img src={UberEats} alt="ubereats" />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 }

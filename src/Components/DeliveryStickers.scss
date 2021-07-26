@@ -3,6 +3,7 @@
 
 .home--sticker__container {
   width: 100%;
+  z-index: 5;
   @include flex(center, center, row);
 
   .home--sticker {

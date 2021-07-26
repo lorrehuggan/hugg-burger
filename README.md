@@ -1,3 +1,8 @@
 ## HuggBurger
 
-A fast food web app for a modern and vibrant food company.
+A landing site for a fast food restaurant.
+
+Tools used:
+React,
+Sass,
+Framer Motion,

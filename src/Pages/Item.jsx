@@ -12,14 +12,11 @@ function Item({ match }) {
 
   return (
     <Fragment>
-      <Navigation />
+      <Navigation noShow />
       <div className="item--container">
         <Link to="/menu">
           <div className="item--goback">
-            <div className="goback--icon">
-              <IoIosArrowBack />
-            </div>
-            <p>Go Back</p>
+            <h4>Go Back</h4>
           </div>
         </Link>
 

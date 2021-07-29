@@ -19,6 +19,9 @@ nav {
   a {
     text-decoration: none;
     color: $primary-dark-color;
+    height: 6rem;
+    @include flex(center, center, row);
+    padding-top: 1rem;
   }
 
   span {
@@ -27,7 +30,7 @@ nav {
   }
 
   .nav--logo {
-    @include flex(space-between, center, row);
+    @include flex(center, center, row);
     text-transform: uppercase;
     font-size: 2.5rem;
     letter-spacing: -0.2rem;
@@ -38,8 +41,6 @@ nav {
       color: black;
     }
     h4 {
-      margin-top: 0.5rem;
-      margin-left: 0.5rem;
       transition: color 0.2s ease;
       font-weight: 900;
 
@@ -50,8 +51,6 @@ nav {
   }
 
   .nav--links__container {
-    width: 25%;
-
     ul {
       @include flex(right, center, row);
 
@@ -66,6 +65,9 @@ nav {
         cursor: pointer;
         &:hover {
           color: black;
+        }
+        @include tablet {
+          padding: 1rem;
         }
       }
     }

@@ -1,3 +1,4 @@
+@import './variables.scss';
 @mixin flex($justify, $align, $direction) {
   display: flex;
   justify-content: $justify;
@@ -22,4 +23,17 @@
 }
 @mixin small {
   font-size: 0.667rem;
+}
+
+//MEDIA QUERIES
+
+@mixin tabletLandscape {
+  @media (max-width: $tabletLandscape) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
 }

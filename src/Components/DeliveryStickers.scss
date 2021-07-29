@@ -5,6 +5,8 @@
   width: 100%;
   z-index: 5;
   @include flex(center, center, row);
+  @include tablet {
+  }
 
   .home--sticker {
     padding: 2rem;

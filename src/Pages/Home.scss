@@ -21,6 +21,12 @@
         &:hover {
           transform: scale(1.02);
         }
+        @include tabletLandscape {
+          width: 300px;
+        }
+        @include tablet {
+          width: 280px;
+        }
       }
     }
 
@@ -43,9 +49,11 @@
         @include h1;
         color: $primary-dark-color;
         font-weight: 900;
-
         letter-spacing: -0.25rem;
         text-align: center;
+        @include tabletLandscape {
+          @include h3;
+        }
       }
     }
   }
@@ -59,5 +67,11 @@
     width: 27%;
     text-align: center;
     color: $primary-dark-color;
+    @include tabletLandscape {
+      width: 35%;
+    }
+    @include tablet {
+      width: 45%;
+    }
   }
 }

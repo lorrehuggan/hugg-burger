@@ -5,7 +5,8 @@ footer {
   width: 100%;
   height: 30rem;
   background-color: black;
-  
+  overflow: hidden;
+
   .footer--signup {
     background-color: white;
     @include flex(center, center, column);
@@ -67,6 +68,9 @@ footer {
       .footer--info__top {
         @include flex(space-between, center, row);
         width: 35rem;
+        @include tablet {
+          width: 28rem;
+        }
         .icon {
           color: white;
           font-size: 2rem;
@@ -86,6 +90,9 @@ footer {
       margin-top: 0.5rem;
       img {
         height: 100px;
+        @include tablet {
+          height: 70px;
+        }
       }
     }
   }

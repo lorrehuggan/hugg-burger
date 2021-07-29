@@ -1,0 +1,34 @@
+@import '../Sass/mixin.scss';
+@import '../Sass/variables.scss';
+
+.location__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.location__details {
+  height: 500px;
+  color: $primary-dark-color;
+}
+
+h2 {
+  @include h2;
+}
+
+h4 {
+  @include h4;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.last__p {
+  margin-bottom: 7rem;
+  width: 20%;
+}

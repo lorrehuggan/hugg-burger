@@ -11,13 +11,11 @@
     height: 6.25rem;
     width: 20rem;
     z-index: 3;
-
     @include flex(space-around, center, row);
 
     .sticker {
       height: 6rem;
       width: calc(18rem * 3);
-      background-color: rgba(255, 255, 255, 0.102);
       border-radius: 50%;
       img {
         width: 128px;

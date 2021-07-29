@@ -1,0 +1,9 @@
+@import '../Sass/mixin.scss';
+@import '../Sass/variables.scss';
+
+#gmapcanvas img {
+  max-width: none !important;
+  background: none !important;
+  font-size: inherit;
+  font-weight: inherit;
+}

@@ -1,0 +1,17 @@
+@import '../Sass/mixin.scss';
+@import '../Sass/variables.scss';
+
+section {
+  @include flex(center, center, column);
+  height: calc(100vh - 36rem);
+
+  h2 {
+    @include h2;
+    color: $primary-dark-color;
+    margin-bottom: 2rem;
+  }
+  h5 {
+    @include h5;
+    color: $primary-dark-color;
+  }
+}

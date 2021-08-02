@@ -37,3 +37,20 @@
     @content;
   }
 }
+@mixin largePhone {
+  @media (max-width: $largePhone) {
+    @content;
+  }
+}
+
+@mixin mediumPhone {
+  @media (max-width: $mediumPhone) {
+    @content;
+  }
+}
+
+@mixin smallPhone {
+  @media (max-width: $smallPhone) {
+    @content;
+  }
+}

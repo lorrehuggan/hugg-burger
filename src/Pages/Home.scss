@@ -27,6 +27,9 @@
         @include tablet {
           width: 280px;
         }
+        @include largePhone {
+          width: 256px;
+        }
       }
     }
 
@@ -72,6 +75,9 @@
     }
     @include tablet {
       width: 45%;
+    }
+    @include largePhone {
+      width: 70%;
     }
   }
 }

@@ -15,11 +15,17 @@ footer {
       width: 30rem;
       height: 100%;
       padding: 1rem;
+      @include largePhone {
+        width: 23rem;
+      }
 
       h3 {
         @include h3;
         margin-top: 1.5rem;
         color: $primary-color;
+        @include largePhone {
+          font-size: 2rem;
+        }
       }
       p {
         @include h5;
@@ -54,6 +60,10 @@ footer {
           &:hover {
             background-color: $primary-color-alt;
           }
+          @include largePhone {
+            font-size: 0.8rem;
+            border-radius: 8px;
+          }
         }
       }
     }
@@ -71,6 +81,9 @@ footer {
         @include tablet {
           width: 28rem;
         }
+        @include largePhone {
+          width: 7rem;
+        }
         .icon {
           color: white;
           font-size: 2rem;
@@ -79,9 +92,15 @@ footer {
           &:hover {
             transform: scale(1.05);
           }
+          @include largePhone {
+            font-size: 1.75rem;
+          }
         }
         small {
           color: white;
+          @include largePhone {
+            display: none;
+          }
         }
       }
     }
@@ -92,6 +111,9 @@ footer {
         height: 100px;
         @include tablet {
           height: 70px;
+        }
+        @include largePhone {
+          height: 64px;
         }
       }
     }

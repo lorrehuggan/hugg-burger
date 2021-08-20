@@ -1,5 +1,5 @@
-@import "../Sass/mixin.scss";
-@import "../Sass/variables.scss";
+@import '../Sass/mixin.scss';
+@import '../Sass/variables.scss';
 
 .menu {
   position: relative;
@@ -19,5 +19,12 @@
     grid-row-gap: 1rem;
     grid-column-gap: 1rem;
     margin-bottom: 5rem;
+    @include tabletLandscape {
+      grid-template-columns: repeat(2, 1fr);
+      width: 55rem;
+    }
+    @include tablet {
+      width: 50rem;
+    }
   }
 }

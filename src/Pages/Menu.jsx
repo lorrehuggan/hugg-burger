@@ -34,6 +34,7 @@ function Menu() {
                   initial="hidden"
                   key={card.id}
                   onClick={() => history.push(`/menu/${card.id}`)}
+                  style={{ display: 'flex', justifyContent: 'center' }}
                 >
                   <MenuCard
                     img={card.img}

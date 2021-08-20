@@ -11,11 +11,19 @@
   &:hover {
     box-shadow: 5px 5px 30px rgba(54, 54, 54, 0.089);
   }
+  @include tablet {
+    width: 20rem;
+    padding: 0rem;
+  }
 
   img {
     width: calc(80rem / 3.5);
     object-fit: cover;
+    @include tablet {
+      width: 15rem;
+    }
   }
+
   .menu--card__details {
     text-align: center;
     color: $primary-dark-color;
@@ -27,6 +35,9 @@
       @include h4;
       text-transform: uppercase;
       font-weight: 900;
+      @include tablet {
+        @include h5;
+      }
     }
     p {
       @include h5;

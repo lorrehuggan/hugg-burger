@@ -15,6 +15,9 @@ nav {
   height: 6rem;
   padding: 0rem 2.25rem;
   width: 100%;
+  @include largePhone {
+    padding: 0rem 0.2rem;
+  }
 
   a {
     text-decoration: none;
@@ -47,6 +50,10 @@ nav {
       &:hover {
         color: black;
       }
+      @include largePhone {
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+      }
     }
   }
 
@@ -68,6 +75,11 @@ nav {
         }
         @include tablet {
           padding: 1rem;
+        }
+        @include largePhone {
+          font-size: 0.75rem;
+          padding: 0rem;
+          margin-right: 0.2rem;
         }
       }
     }

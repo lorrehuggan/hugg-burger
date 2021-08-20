@@ -17,5 +17,9 @@
     &:hover {
       color: #af0000;
     }
+    @include tabletLandscape {
+      left: 2.5rem;
+      @include h5;
+    }
   }
 }
